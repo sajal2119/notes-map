@@ -1,5 +1,7 @@
-notes-map
+# notes-map
+> Demo is available here - [https://notesmap.imfast.io/](https://notesmap.imfast.io/)
 _____________
+
 
 Basic Features
 ===================
@@ -31,5 +33,6 @@ Directory Structure
     .
     ├── logics                   # JS file (`main.js`)
     ├── styles                   # CSS file (`main.css`)
-    ├── index.html               
+    ├── index.html   
+    ├── note.txt               
     └── README.md
