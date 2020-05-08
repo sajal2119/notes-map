@@ -1,0 +1,150 @@
+body {
+    width: 60%;
+    margin: 24px auto;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+button, .add-button, .edit-button, .delete-button {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 0.317rem;
+    background-color: #1fa3ec;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+	cursor: pointer;
+}
+
+#clear-button {
+    background-color: #FFF;
+    color: #90A4AE
+}
+
+#search-button {
+    background-color: #009688;
+}
+
+.edit-button, .delete-button {
+    background-color: #aaa;
+    padding: 4px 8px;
+}
+
+.edit-button {
+    background-color: #C0CA33;
+}
+
+.add-button {
+    background-color: #e98724;
+    padding: 4px 8px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-container .form-label-container {
+    flex: 1;
+    margin-right: 12px;
+}
+
+.form-container .form-label-container input {
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px 8px;
+}
+
+
+.form-container .form-buttons-container button {
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+#notes-list-container {
+    margin-top: 0px;
+}
+
+.note{
+    margin-top: 32px;
+    width: 31%;
+    display: inline-grid;
+    margin-right: 2%;
+    font-size: 1rem;
+}
+
+.note .sub-note {
+    width: 100%;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+.note-body {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.note-body p {
+    padding: 0px 8px;
+}
+
+.note-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4px;
+    align-items: flex-end;
+}
+
+.search-text {
+    background-color: #FFDE03
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+        width: 70%
+    }
+
+    #notes-list-container > .note{
+        width: 46%;
+        margin-right: 4%;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+        width: 80%
+    }
+
+    #notes-list-container > .note{
+        width: 46%;
+        margin-right: 4%;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 480px) {
+    body {
+        width: 90%
+    }
+
+    #notes-list-container > .note{
+        width: 100%;
+        margin-right: 0%;
+    }
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes Map.</title>
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <h1>
+            Notes Map!
+        </h1>
+        <div id='root'>
+            <div class='form-container'>
+                <label class="form-label-container">
+                    <input type='text' name='new-note-input' placeholder="Type to add new note or search ..." autofocus/>
+                </label>
+                <div class="form-buttons-container">
+                    <button id='clear-button' onclick="clearSearch()">Clear</button>
+                    <button id='submit-button' onclick="addNewNoteToRoot()">Submit</button>
+                    <button id='search-button' onclick="searchNodes()">Search</button>
+                </div>
+            </div>
+            <div id='notes-list-container'>
+            </div>
+        </div>
+        <footer>
+        </footer>
+        
+        <script src='./logics/main.js'></script> 
+    </body>
+</html>
